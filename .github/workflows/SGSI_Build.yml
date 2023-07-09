@@ -6,7 +6,7 @@ on:
       ROM_URL:
         description: 'ROM_URL'
         required: true
-        default: ''
+        default: 'https://update.dbankcdn.com/download/data/pub_13/HWHOTA_hota_900_9/9b/v3/XYQH_LUPQaa1XLkAibxMnQ/system-image-phone-arm-3.1.0.306.zip'
       TYPE:
         description: 'OS TYPE'
         required: true
@@ -14,7 +14,7 @@ on:
       ROM:
         description: 'Name of Rom'
         required: true
-        default: ''
+        default: 'hmos3'
       VERSION:
         description: 'Android Version of Source'
         required: true
@@ -34,7 +34,7 @@ on:
       GHR:
         description: 'Upload to GitHub Release'
         required: true
-        default: 'false'
+        default: 'true'
 
 env:              
   ROM_URL: ${{ github.event.inputs.ROM_URL }}
